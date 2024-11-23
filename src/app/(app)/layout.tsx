@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTrigger } from 'components/u
 import { Instagram, Linkedin, MapPin, Menu, Phone, Youtube } from 'lucide-react';
 import { cookies } from 'next/headers';
 import Link from 'next/link';
-import {moveItemToFirst} from 'utils/enterprises-func'
+import { moveItemToFirst } from 'utils/enterprises-func';
 
 const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
   const cookiesStore = cookies();
