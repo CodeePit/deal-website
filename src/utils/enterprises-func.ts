@@ -56,6 +56,6 @@ export async function getPartialOfEnterprises(
         .from('enterprises')
         .select('id, state, city, banner_emphasis, name, type, desc, status')
     ).data || [],
-    '93b252e8-fe0f-4a49-82f8-9a3bc3cc0b73',
+    'eff07ac5-3fe0-41ee-acd5-6bfc66f2939e',
   );
 }
