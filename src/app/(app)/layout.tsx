@@ -154,7 +154,7 @@ const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
                     <li key={id}>
                       <Link href={`/empreendimentos/${id}`}>{name}</Link>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </div>
