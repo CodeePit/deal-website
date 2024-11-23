@@ -149,11 +149,15 @@ const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
             <h3>Empreendimentos</h3>
             <div>
               <ul>
-                {moveItemToFirst(enterprises, 'a1bb54ab-a5a9-46a4-b6a6-c931fac400ef').map(({ id, name }) => (
-                  <li key={id}>
-                    <Link href={`/empreendimentos/${id}`}>{name}</Link>
-                  </li>
-                ))}
+                {moveItemToFirst(
+                    enterprises,
+                    'a1bb54ab-a5a9-46a4-b6a6-c931fac400ef',
+                  ).map(({ id, name }) => (
+                    <li key={id}>
+                      <Link href={`/empreendimentos/${id}`}>{name}</Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>
