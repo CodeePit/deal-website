@@ -150,7 +150,7 @@ const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
             <div>
               <ul>
                 {moveItemToFirst(enterprises, 'a1bb54ab-a5a9-46a4-b6a6-c931fac400ef').map(
-        	        ({ id, name }) => (
+                  ({ id, name }) => (
                     <li key={id}>
                       <Link href={`/empreendimentos/${id}`}>{name}</Link>
                     </li>
