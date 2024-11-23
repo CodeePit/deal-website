@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTrigger } from 'components/u
 import { Instagram, Linkedin, MapPin, Menu, Phone, Youtube } from 'lucide-react';
 import { cookies } from 'next/headers';
 import Link from 'next/link';
+import {moveItemToFirst} from 'utils/enterprises-func'
 
 const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
   const cookiesStore = cookies();
@@ -148,7 +149,7 @@ const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
             <h3>Empreendimentos</h3>
             <div>
               <ul>
-                {enterprises.map(({ id, name }) => (
+                {moveItemToFirst(enterprises, 'a1bb54ab-a5a9-46a4-b6a6-c931fac400ef').map(({ id, name }) => (
                   <li key={id}>
                     <Link href={`/empreendimentos/${id}`}>{name}</Link>
                   </li>
