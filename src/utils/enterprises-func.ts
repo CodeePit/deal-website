@@ -36,7 +36,7 @@ export async function deleteEnterprise(
   return 'success';
 }
 
-function moveItemToFirst(array: any[], id: string) {
+export function moveItemToFirst(array: any[], id: string) {
   const i = array.findIndex((enterprise) => enterprise.id === id);
 
   if (i >= array.length || i < 0) return array;
