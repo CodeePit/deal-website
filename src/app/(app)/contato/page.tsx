@@ -31,6 +31,7 @@ const About = () => {
                 'Olá vim do site!',
               )}`}
               target="_blank"
+              id="whatsapp"
             >
               <WhatsApp className="w-6 h-6 fill-gold mr-4" aria-hidden />
               Fale no WhatsApp

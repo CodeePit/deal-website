@@ -129,7 +129,7 @@ export const SendEmailForm = () => {
             </FormItem>
           )}
         />
-        <Button className="uppercase text-2xl self-end" variant="fill" size="lg">
+        <Button id="formulario" className="uppercase text-2xl self-end" variant="fill" size="lg">
           Enviar
         </Button>
       </form>

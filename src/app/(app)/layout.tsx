@@ -118,6 +118,7 @@ const AppLayout: BTypes.NLPage<{}, true> = async ({ children }) => {
             aria-label="WhatsApp"
             target="_blank"
             rel="noreferrer"
+            id="whatsapp"
           >
             <WhatsApp className="w-8 h-8 text-white" />
           </a>
